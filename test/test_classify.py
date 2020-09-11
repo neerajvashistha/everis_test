@@ -1,6 +1,6 @@
 import pytest
 from contextlib import contextmanager
-from src.core import classify, InvalidData
+from src.classify import classify, InvalidData
 
 def test_non_int_arguments():
 	with pytest.raises(InvalidData):
