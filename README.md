@@ -13,7 +13,6 @@ root_dir: everis_test
 │   └── store_transactions.csv
 ├── dockerfile
 ├── LICENSE
-├── Makefile
 ├── README.md
 ├── requirements.txt
 ├── src
