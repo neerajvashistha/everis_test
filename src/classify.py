@@ -30,7 +30,7 @@ class classify:
 
 		"""
 		if not isinstance(product_id, int):
-			raise InvalidData('product_id has to be be integer')		
+			raise InvalidData('product_id has to be integer')		
 		match_records = self.df[self.df['PRODUCT_ID']==product_id].copy() # get matching product_id records and make a separate copy in memory
 		if match_records.empty:
 			raise InvalidData('Please provide a valid product_id')
