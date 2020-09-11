@@ -43,20 +43,8 @@ class classify:
 		with open(file_path, 'w') as outfile:
 			json.dump(format_records, outfile)
 		return json.dumps(format_records)
-		# except Exception as e:
-		# 	exc_type, exc_obj, exc_tb = sys.exc_info()
-		# 	fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-		# 	print(exc_type, fname, exc_tb.tb_lineno, e)
-
 
 
 if __name__ == '__main__':
-	my_parser = argparse.ArgumentParser(description='list the product description for given product_id')
-	my_parser.add_argument('product_id',
-							metavar='product_id',
-							type=int,
-							help='product_id for description')
-	args = my_parser.parse_args()
-	product_id = args.product_id
 	obj = classify()
-	print(obj.get_classification(product_id))
+	print(obj.get_classification(12254943))
